@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Hub</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="sec.css">
+    <link rel="stylesheet" href="descrp.css">
+    <link rel="stylesheet" href="syntax.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar"> 
+        <div class="image">
+            <img src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+        </div>
+        <div class="contents">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Email.html">Email</a></li>
+            </ul>
+        </div>
+         </nav>
+         <section>
+             <div class="home">
+               <h1 class="head">Welcome to the Knowledge Hub</h1>
+            
+               <p> A programming language is a formal language comprising a set of strings that produce various kinds of machine code output. Programming languages are one kind of computer language, and are used in computer programming to implement algorithms. Most programming languages consist of instructions for computers. </p>
+               <p> There are programmable machines that use a set of specific instructions, rather than general programming languages. </p>
+               <div class="button">
+                   <br>
+                   <button> <b><i> Click Here </i></b></button>
+               </div>
+               <!-- ...for languagesdescription.... -->
+               
+             </div>
+
+         </section>
+          
+         <!--......................... FOR INFORMATIONS REGARDING LANGUAGES ............................ -->
+        
+            <div class="container">
+                <div class="py">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb-oYJkRCu6dbQ3dq7Fm9Oey1CAHKmzMI_WdxzDvviQoWWkSVs6J9w_sJKUE0YgechdD0&usqp=CAU" alt="">
+                    <h3> <i> PYTHON: </i></h3>
+                    <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse.</p>
+
+                </div>
+                <br>
+                <div class="jav">
+                    <img src="https://besthqwallpapers.com/Uploads/6-4-2020/127422/thumb2-java-black-logo-programming-language-grid-metal-background-java-artwork.jpg" alt="">
+                    <h3> <i> JAVA: </i></h3>
+                    <p>  Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. ... Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture.</p>
+
+                </div>
+                <br>
+                <div class="cpp">
+                    <img src="https://www.sourcekode.in/img/course_sk/cpp-training-at-sourcekode.jpg" alt="">
+                    <h3><i>C++ </i></h3>
+                    <p>C++ (/ˌsiːˌplʌsˈplʌs/) is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes". ... The C++ programming language was initially standardized in 1998 as ISO/IEC 14882:1998, which was then amended by the C++03, C++11, C++14, and C++17 standards.</p>
+
+
+                </div> 
+            </div> <!--END FOR CLASS CONTAINER--->
+            <br>
+            <hr>
+            <hr>
+
+
+        <!-- ...............................NEXT WORK IMPLEMENT .............................. -->
+
+        <div class="syntax">
+            <h3> ➦ Example Of Python Program:Simple Calculator by using Functions</h3>
+            <hr>
+            <hr>
+            <div class="pythprog">
+                <p><pre>
+                # Program make a simple calculator
+
+                # This function adds two numbers
+                def add(x, y):
+                    return x + y
+                
+                # This function subtracts two numbers
+                def subtract(x, y):
+                    return x - y
+                
+                # This function multiplies two numbers
+                def multiply(x, y):
+                    return x * y
+                
+                # This function divides two numbers
+                def divide(x, y):
+                    return x / y
+                
+                
+                print("Select operation.")
+                print("1.Add")
+                print("2.Subtract")
+                print("3.Multiply")
+                print("4.Divide")
+                
+                while True:
+                    # Take input from the user
+                    choice = input("Enter choice(1/2/3/4): ")
+                
+                    # Check if choice is one of the four options
+                    if choice in ('1', '2', '3', '4'):
+                        num1 = float(input("Enter first number: "))
+                        num2 = float(input("Enter second number: "))
+                
+                        if choice == '1':
+                            print(num1, "+", num2, "=", add(num1, num2))
+                
+                        elif choice == '2':
+                            print(num1, "-", num2, "=", subtract(num1, num2))
+                
+                        elif choice == '3':
+                            print(num1, "*", num2, "=", multiply(num1, num2))
+                
+                        elif choice == '4':
+                            print(num1, "/", num2, "=", divide(num1, num2))
+                        break
+                    else:
+                        print("Invalid Input")
+                
+                    </pre></p>
+                </div> <!--end for pythprog-->
+        </div> <!---END FOR DIV SYNTAX-->
+        <hr>
+        <hr>
+
+         <div class="syntax1">
+             <h3> ➦ Example Of Java Program:To Check Palindrome Number </h3>
+             <hr>
+             <hr>
+             <div class="javaprog">
+                 <p>
+                     <pre>
+                    public static boolean isPalindrome(int number) {
+                        int palindrome = number; // copied number into variable
+                        int reverse = 0;
+                    
+                        while (palindrome != 0) {
+                            int remainder = palindrome % 10;
+                            reverse = reverse * 10 + remainder;
+                            palindrome = palindrome / 10;
+                        }
+                    
+                        // if original and reverse of number is equal means
+                        // number is palindrome in Java
+                        if (number == reverse) {
+                            return true;
+                        }
+                        return false;
+                    }
+                 </pre>
+                </p>
+             </div>
+         </div> <!--END FOR DIV SYNTAX1-->
+         <hr>
+         <hr>
+         <div class="syntax2">
+             <h3> ➦ Example Of C++ Program:Check prime Number</h3>
+             <hr>
+             <hr>
+              <div class="cppprog">
+               <p>
+                 <pre>
+                    #include <iostream>
+                        using namespace std;
+                        
+                        int main() {
+                            int i, n;
+                            bool isPrime = true;
+                        
+                            cout << "Enter a positive integer: ";
+                            cin >> n;
+                        
+                            // 0 and 1 are not prime numbers
+                            if (n == 0 || n == 1) {
+                                isPrime = false;
+                            }
+                            else {
+                                for (i = 2; i <= n / 2; ++i) {
+                                    if (n % i == 0) {
+                                        isPrime = false;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (isPrime)
+                                cout << n << " is a prime number";
+                            else
+                                cout << n << " is not a prime number";
+                        
+                            return 0;
+                        }
+                        
+                 </pre>
+             </p>
+            </div> <!--END FOR DIV CPP-->
+         </div> <!--END FOR SYNTAX2-->
+         <footer>
+            copyright &copy; myKnowledgeHub.com
+         </footer>
+</body>
+</html>
